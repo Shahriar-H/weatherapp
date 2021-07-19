@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.maindiv{
+    background-color: rgb(250, 185, 110);
+    height: 25rem;
+    width: 20%;
+    box-shadow: 0px 0px 4px 0px rgb(128, 128, 128);
+    overflow: hidden;
+    position: relative;
+}
+.carddiv{
+    text-align: center;
+    padding-top: 30px;
+}
+.carddiv p{
+    opacity: 0.5;
+}
+.carddiv #weathdericon{
+    margin-top: 10px;
+    color: rgb(238, 255, 0);
+    animation: runicon 3s linear infinite;
+    -webkit-animation: runicon 3s linear infinite;
+}
+@keyframes runicon {
+    0%{
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+}50%{
+    transform: translateX(20px);
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
+}100%{
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+}
+}
+.div1{
+    background-color: rgba(62, 252, 242, 0.479);
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    bottom: -290px;
+    top: 0;
+    left: -20px;
+    right: 0;
+    margin: auto;
+    border-radius: 45% 55% 50% 55%;
+    -webkit-border-radius: 45% 55% 50% 55%;
+    -moz-border-radius: 45% 55% 50% 55%;
+    -ms-border-radius: 45% 55% 50% 55%;
+    -o-border-radius: 45% 55% 50% 55%;
+    animation: circle1 5s linear infinite;
+    -webkit-animation: circle1 5s linear infinite;
+}
+
+@keyframes circle1 {
+    from{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+
+.div2{
+    background-color: rgba(46, 204, 196, 0.671);
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    bottom: -330px;
+    top: 0;
+    left: -20px;
+    right: 0;
+    margin: auto;
+    border-radius: 45% 50% 55% 50%;
+    -webkit-border-radius: 45% 50% 55% 50%;
+    -moz-border-radius: 45% 50% 55% 50%;
+    -ms-border-radius: 45% 50% 55% 50%;
+    -o-border-radius: 45% 50% 55% 50%;
+    animation: circle2 4s linear infinite;
+    -webkit-animation: circle2 4s linear infinite;
+}
+
+@keyframes circle2 {
+    from{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}to{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+
+.div3{
+    background-color: rgb(0, 224, 213);
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    bottom: -310px;
+    top: 0;
+    left: -20px;
+    right: 0;
+    margin: auto;
+    border-radius: 50% 45% 55% 50%;
+    -webkit-border-radius: 50% 45% 55% 50%;
+    -moz-border-radius: 50% 45% 55% 50%;
+    -ms-border-radius: 50% 45% 55% 50%;
+    -o-border-radius: 50% 45% 55% 50%;
+    animation: circle3 4s linear infinite;
+    -webkit-animation: circle3 5s linear infinite;
+}
+
+@keyframes circle3 {
+    from{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+.temp{
+    position: absolute;
+    bottom: 90px;
+    text-align: center;
+    width: 100%;
+}
+.district{
+    position: absolute;
+    top: 135px;
+    width: 20%;
+    background-color: rgb(250, 185, 110);
+    z-index: 999999;
+}
+.district select{
+    width: 100%;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+}
+#condition{
+    font-weight: bold !important;
+    color: rgb(80, 80, 1);
+}
+
+
+
+@media only screen and (min-width: 200px) and (max-width:991px) {
+    .maindiv {
+        height: 100vh;
+        width: 100%;
+    }
+    .carddiv #weathdericon {
+        margin-top: 40px;
+    }
+    .temp {
+        bottom: 143px;
+    }
+    .district{
+        top: 1px;
+        width: 100%;
+        background-color: rgb(253, 172, 80);
+    }
+    .carddiv {
+        padding-top: 85px;
+    }
+    .carddiv #weathdericon {
+        font-size: 90px !important;
+    }
+    .div1,.div2,.div3{
+        width: 500px;
+        height: 500px;
+        bottom: -510px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
